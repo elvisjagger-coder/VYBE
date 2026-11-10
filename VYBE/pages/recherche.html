@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche — VYBE</title>
+    <link rel="icon" href="../assets/logo/favicon.png">
+
+    <!-- Polices de la maquette : Manrope (titres) et DM Sans (textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="recherche">
+
+    <div class="application">
+
+        <!-- Barre latérale, barre du haut : remplies par js/script.js -->
+        <aside class="barre-laterale" id="barreLaterale"></aside>
+        <header class="barre-haut" id="barreHaut"></header>
+
+        <main class="contenu">
+
+            <!-- ===== Contenu propre à cette page ===== -->
+
+            <div class="page">
+                <div class="entete-page">
+                    <div>
+                        <span class="surtitre" id="surtitreRecherche">Trouvez votre prochain coup de cœur</span>
+                        <h1 id="titreRecherche">Recherche</h1>
+                    </div>
+                </div>
+
+                <!-- Champ de recherche : les résultats s'affichent pendant la saisie -->
+                <div class="champ-recherche">
+                    <svg class="icone icone-grande"><use href="../assets/icones.svg#recherche"></use></svg>
+                    <input type="text" id="recherche" placeholder="Qu'avez-vous envie d'écouter ?" aria-label="Rechercher une musique">
+                </div>
+
+                <!-- Affiché quand le champ est vide -->
+                <div id="suggestions">
+                    <section>
+                        <div class="titre-section"><h2>Populaire en ce moment</h2></div>
+                        <div class="recherches-populaires" id="recherchesPopulaires"></div>
+                    </section>
+                    <section>
+                        <div class="titre-section"><h2>Parcourir par genre</h2></div>
+                        <div class="grille-genres" id="grilleGenres"></div>
+                    </section>
+                </div>
+
+                <!-- Affiché quand il y a une recherche ou un genre choisi -->
+                <div id="resultats" class="cache">
+                    <section>
+                        <div class="onglets" id="onglets">
+                            <button class="actif" data-categorie="tout">Tout</button>
+                            <button data-categorie="titres">Titres</button>
+                            <button data-categorie="artistes">Artistes</button>
+                            <button data-categorie="albums">Albums</button>
+                        </div>
+                    </section>
+
+                    <div class="etat-vide cache" id="aucunResultat">
+                        <svg class="icone"><use href="../assets/icones.svg#recherche"></use></svg>
+                        <h2>Aucun résultat</h2>
+                        <p>Essayez Luna Ray, Nova K, Afterglow ou le titre d'une chanson.</p>
+                    </div>
+
+                    <div class="resultats-haut" id="blocTitres">
+                        <button class="meilleur-resultat" id="meilleurResultat"></button>
+                        <div>
+                            <div class="titre-section"><h2>Titres</h2></div>
+                            <div id="listeTitres"></div>
+                        </div>
+                    </div>
+
+                    <section id="blocArtistes">
+                        <div class="titre-section"><h2>Artistes</h2></div>
+                        <div class="grille-cartes six" id="listeArtistes"></div>
+                    </section>
+
+                    <section id="blocAlbums">
+                        <div class="titre-section"><h2>Albums</h2></div>
+                        <div class="grille-cartes six" id="listeAlbums"></div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Pied de page : rempli par js/script.js -->
+            <footer class="pied-de-page" id="piedDePage"></footer>
+        </main>
+
+        <!-- Lecteur audio et navigation mobile : remplis par js/script.js -->
+        <footer class="lecteur" id="lecteur"></footer>
+        <nav class="nav-mobile" id="navMobile" aria-label="Navigation principale"></nav>
+    </div>
+
+    <!-- Lecteur plein écran : rempli par js/script.js -->
+    <div class="lecteur-plein" id="lecteurPlein"></div>
+
+    <!-- script.js (commun) doit être chargé AVANT le script de la page -->
+    <script src="../js/script.js"></script>
+    <script src="../js/recherche.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion — VYBE</title>
+    <link rel="icon" href="../assets/logo/favicon.png">
+
+    <!-- Polices de la maquette : Manrope (titres) et DM Sans (textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="connexion">
+
+    <div class="auth-page">
+
+        <!-- Colonne de gauche : image et citation -->
+        <div class="auth-image">
+            <a href="../index.html" class="marque" aria-label="VYBE"><img src="../assets/logo/vybe-logo.png" alt="VYBE"></a>
+            <div>
+                <div class="surtitre"><svg class="icone icone-petite"><use href="../assets/icones.svg#etincelles"></use></svg> Exclusivité VYBE</div>
+                <blockquote>« La musique est le chemin le plus court entre deux cœurs. »</blockquote>
+                <p>Rencontrez Luna Ray, la voix derrière Afterglow.</p>
+            </div>
+        </div>
+
+        <!-- Colonne de droite : le formulaire -->
+        <div class="auth-panneau">
+            <a href="../index.html" class="lien-retour"><svg class="icone icone-petite"><use href="../assets/icones.svg#fleche-gauche"></use></svg> Retour</a>
+
+            <form class="auth-formulaire" id="formulaireAuth">
+                <h2>Bon retour</h2>
+                <p>Connectez-vous pour retrouver votre musique.</p>
+                <p class="note-info">Démonstration : utilisez un e-mail et un mot de passe fictifs, jamais vos vrais identifiants.</p>
+
+                <label>
+                    Adresse e-mail
+                    <input type="email" placeholder="alex@exemple.com" required autocomplete="off">
+                </label>
+                <label>
+                    Mot de passe
+                    <div class="champ-mot-de-passe">
+                        <input type="password" id="champMotDePasse" placeholder="Au moins 8 caractères" required minlength="8" autocomplete="off">
+                        <button type="button" id="boutonVoirMotDePasse" aria-label="Afficher le mot de passe"><svg class="icone"><use href="../assets/icones.svg#oeil"></use></svg></button>
+                    </div>
+                </label>
+                <a href="mot-de-passe.html" class="lien-oubli">Mot de passe oublié ?</a>
+
+                <button type="submit" class="bouton bouton-principal pleine-largeur">Se connecter</button>
+                <p class="changer-auth">Nouveau sur VYBE ? <a href="inscription.html">Créer un compte</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

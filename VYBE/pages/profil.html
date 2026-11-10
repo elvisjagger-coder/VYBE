@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil — VYBE</title>
+    <link rel="icon" href="../assets/logo/favicon.png">
+
+    <!-- Polices de la maquette : Manrope (titres) et DM Sans (textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="profil">
+
+    <div class="application">
+
+        <!-- Barre latérale, barre du haut : remplies par js/script.js -->
+        <aside class="barre-laterale" id="barreLaterale"></aside>
+        <header class="barre-haut" id="barreHaut"></header>
+
+        <main class="contenu">
+
+            <!-- ===== Contenu propre à cette page ===== -->
+
+            <div class="page">
+
+                <section class="hero-profil">
+                    <img src="../assets/images/nova.jpg" alt="Photo de profil">
+                    <div>
+                        <span class="surtitre">Profil</span>
+                        <h1 class="js-nom"></h1>
+                        <p id="resumeProfil"></p>
+                        <a href="parametres.html" class="bouton bouton-secondaire">Modifier le profil</a>
+                    </div>
+                </section>
+
+                <div class="statistiques">
+                    <div><b>14 820</b><span>Minutes écoutées</span></div>
+                    <div><b>1 284</b><span>Titres joués</span></div>
+                    <div><b>386</b><span>Artistes découverts</span></div>
+                    <div><b>27</b><span>Jours d'affilée</span></div>
+                </div>
+
+                <div class="titre-section"><h2>Vos artistes du mois</h2></div>
+                <div class="grille-cartes six" id="artistesProfil"></div>
+
+                <section>
+                    <div class="titre-section">
+                        <h2>Vos playlists</h2>
+                        <a href="playlists.html">Tout voir <svg class="icone icone-petite"><use href="../assets/icones.svg#fleche-droite"></use></svg></a>
+                    </div>
+                    <div class="grille-cartes six" id="playlistsProfil"></div>
+                </section>
+            </div>
+
+            <!-- Pied de page : rempli par js/script.js -->
+            <footer class="pied-de-page" id="piedDePage"></footer>
+        </main>
+
+        <!-- Lecteur audio et navigation mobile : remplis par js/script.js -->
+        <footer class="lecteur" id="lecteur"></footer>
+        <nav class="nav-mobile" id="navMobile" aria-label="Navigation principale"></nav>
+    </div>
+
+    <!-- Lecteur plein écran : rempli par js/script.js -->
+    <div class="lecteur-plein" id="lecteurPlein"></div>
+
+    <!-- script.js (commun) doit être chargé AVANT le script de la page -->
+    <script src="../js/script.js"></script>
+    <script src="../js/profil.js"></script>
+</body>
+</html>

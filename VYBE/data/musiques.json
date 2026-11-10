@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "titre": "Midnight Echoes",
+    "artiste": "Luna Ray",
+    "album": "Afterglow",
+    "genre": "R&B",
+    "annee": 2026,
+    "duree": "0:24",
+    "image": "../assets/images/luna.jpg",
+    "audio": "../assets/music/midnight-echoes.mp3"
+  },
+  {
+    "id": 2,
+    "titre": "Velvet Skies",
+    "artiste": "Luna Ray",
+    "album": "Afterglow",
+    "genre": "R&B",
+    "annee": 2026,
+    "duree": "0:23",
+    "image": "../assets/images/violet.jpg",
+    "audio": "../assets/music/velvet-skies.mp3"
+  },
+  {
+    "id": 3,
+    "titre": "Out of Orbit",
+    "artiste": "Nova K",
+    "album": "Gravity",
+    "genre": "Electronic",
+    "annee": 2025,
+    "duree": "0:25",
+    "image": "../assets/images/nova.jpg",
+    "audio": "../assets/music/out-of-orbit.mp3"
+  },
+  {
+    "id": 4,
+    "titre": "Slow Motion",
+    "artiste": "Milo Grey",
+    "album": "Blue Hours",
+    "genre": "Indie",
+    "annee": 2025,
+    "duree": "0:25",
+    "image": "../assets/images/blue.jpg",
+    "audio": "../assets/music/slow-motion.mp3"
+  },
+  {
+    "id": 5,
+    "titre": "Electric Bloom",
+    "artiste": "Aya Sol",
+    "album": "Flora",
+    "genre": "Afrobeats",
+    "annee": 2026,
+    "duree": "0:28",
+    "image": "../assets/images/dagger.jpg",
+    "audio": "../assets/music/electric-bloom.mp3"
+  },
+  {
+    "id": 6,
+    "titre": "No Signal",
+    "artiste": "Soren",
+    "album": "Offline",
+    "genre": "Hip-Hop",
+    "annee": 2024,
+    "duree": "0:24",
+    "image": "../assets/images/red.jpg",
+    "audio": "../assets/music/no-signal.mp3"
+  },
+  {
+    "id": 7,
+    "titre": "First Light",
+    "artiste": "Iris Vale",
+    "album": "First Light",
+    "genre": "Jazz",
+    "annee": 2026,
+    "duree": "0:24",
+    "image": "../assets/images/purple.jpg",
+    "audio": "../assets/music/first-light.mp3"
+  },
+  {
+    "id": 8,
+    "titre": "Golden Hour",
+    "artiste": "Luna Ray",
+    "album": "Afterglow",
+    "genre": "R&B",
+    "annee": 2026,
+    "duree": "0:23",
+    "image": "../assets/images/stage.jpg",
+    "audio": "../assets/music/golden-hour.mp3"
+  }
+]

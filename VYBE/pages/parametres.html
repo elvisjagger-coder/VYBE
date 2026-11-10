@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres — VYBE</title>
+    <link rel="icon" href="../assets/logo/favicon.png">
+
+    <!-- Polices de la maquette : Manrope (titres) et DM Sans (textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="parametres">
+
+    <div class="application">
+
+        <!-- Barre latérale, barre du haut : remplies par js/script.js -->
+        <aside class="barre-laterale" id="barreLaterale"></aside>
+        <header class="barre-haut" id="barreHaut"></header>
+
+        <main class="contenu">
+
+            <!-- ===== Contenu propre à cette page ===== -->
+
+            <div class="page">
+                <div class="entete-page">
+                    <div>
+                        <span class="surtitre">Faites comme chez vous</span>
+                        <h1>Paramètres</h1>
+                        <p>Juste l'essentiel. Comme vous l'aimez.</p>
+                    </div>
+                </div>
+
+                <div class="disposition-parametres">
+
+                    <!-- Menu des onglets -->
+                    <aside>
+                        <button class="actif" id="ongletCompte">Compte</button>
+                        <button id="ongletApparence">Apparence</button>
+                        <a href="../index.html" class="deconnexion"><svg class="icone icone-petite"><use href="../assets/icones.svg#deconnexion"></use></svg> Se déconnecter</a>
+                    </aside>
+
+                    <div class="panneau-parametres">
+
+                        <!-- Onglet « Compte » -->
+                        <div id="panneauCompte">
+                            <h2>Compte</h2>
+                            <p>Votre coin personnel sur VYBE.</p>
+                            <div class="profil-edition">
+                                <img src="../assets/images/nova.jpg" alt="Photo de profil">
+                                <div>
+                                    <b class="js-nom"></b>
+                                    <p class="message-statut">Écouter un peu différemment.</p>
+                                </div>
+                            </div>
+                            <label>
+                                Nom affiché
+                                <input type="text" id="champNom" maxlength="60">
+                            </label>
+                            <p class="note-info">Votre nom est enregistré uniquement dans ce navigateur.</p>
+                            <button class="bouton bouton-principal" id="boutonEnregistrerNom">Enregistrer</button>
+                            <p class="message-statut cache" id="messageEnregistre"><svg class="icone icone-petite"><use href="../assets/icones.svg#valide"></use></svg> Profil mis à jour</p>
+                        </div>
+
+                        <!-- Onglet « Apparence » (caché au départ) -->
+                        <div id="panneauApparence" class="cache">
+                            <h2>Apparence</h2>
+                            <p>Un espace plus calme pour votre musique.</p>
+                            <div class="visibilite reglage">
+                                <div>
+                                    <b>Réduire les animations</b>
+                                    <span>Garde les transitions et les images immobiles.</span>
+                                </div>
+                                <button class="interrupteur" id="interrupteurAnimations" aria-label="Réduire les animations"><i></i></button>
+                            </div>
+                            <div class="visibilite reglage">
+                                <div>
+                                    <b>Pochettes compactes</b>
+                                    <span>Affiche plus de pochettes par ligne sur ordinateur.</span>
+                                </div>
+                                <button class="interrupteur" id="interrupteurPochettes" aria-label="Pochettes compactes"><i></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pied de page : rempli par js/script.js -->
+            <footer class="pied-de-page" id="piedDePage"></footer>
+        </main>
+
+        <!-- Lecteur audio et navigation mobile : remplis par js/script.js -->
+        <footer class="lecteur" id="lecteur"></footer>
+        <nav class="nav-mobile" id="navMobile" aria-label="Navigation principale"></nav>
+    </div>
+
+    <!-- Lecteur plein écran : rempli par js/script.js -->
+    <div class="lecteur-plein" id="lecteurPlein"></div>
+
+    <!-- script.js (commun) doit être chargé AVANT le script de la page -->
+    <script src="../js/script.js"></script>
+    <script src="../js/parametres.js"></script>
+</body>
+</html>

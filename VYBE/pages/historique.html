@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique d'écoute — VYBE</title>
+    <link rel="icon" href="../assets/logo/favicon.png">
+
+    <!-- Polices de la maquette : Manrope (titres) et DM Sans (textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="historique">
+
+    <div class="application">
+
+        <!-- Barre latérale, barre du haut : remplies par js/script.js -->
+        <aside class="barre-laterale" id="barreLaterale"></aside>
+        <header class="barre-haut" id="barreHaut"></header>
+
+        <main class="contenu">
+
+            <!-- ===== Contenu propre à cette page ===== -->
+
+            <div class="page">
+                <div class="entete-page">
+                    <div>
+                        <span class="surtitre">Votre bibliothèque</span>
+                        <h1>Historique d'écoute</h1>
+                        <p id="sousTitre">Vos écoutes, de la plus récente à la plus ancienne</p>
+                    </div>
+                </div>
+
+                <!-- Liste déroulante pour trier -->
+                <label class="tri">
+                    Trier par
+                    <select id="tri" aria-label="Trier la liste">
+                        <option value="recent">Ajouts récents</option>
+                        <option value="alphabetique">Nom A–Z</option>
+                    </select>
+                </label>
+
+                <!-- La liste est remplie par js/collection.js -->
+                <div id="liste"></div>
+            </div>
+
+            <!-- Pied de page : rempli par js/script.js -->
+            <footer class="pied-de-page" id="piedDePage"></footer>
+        </main>
+
+        <!-- Lecteur audio et navigation mobile : remplis par js/script.js -->
+        <footer class="lecteur" id="lecteur"></footer>
+        <nav class="nav-mobile" id="navMobile" aria-label="Navigation principale"></nav>
+    </div>
+
+    <!-- Lecteur plein écran : rempli par js/script.js -->
+    <div class="lecteur-plein" id="lecteurPlein"></div>
+
+    <!-- script.js (commun) doit être chargé AVANT le script de la page -->
+    <script src="../js/script.js"></script>
+    <script src="../js/collection.js"></script>
+</body>
+</html>

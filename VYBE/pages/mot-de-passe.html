@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de passe oublié — VYBE</title>
+    <link rel="icon" href="../assets/logo/favicon.png">
+
+    <!-- Polices de la maquette : Manrope (titres) et DM Sans (textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="mot-de-passe">
+
+    <div class="auth-page">
+
+        <!-- Colonne de gauche : image et citation -->
+        <div class="auth-image">
+            <a href="../index.html" class="marque" aria-label="VYBE"><img src="../assets/logo/vybe-logo.png" alt="VYBE"></a>
+            <div>
+                <div class="surtitre"><svg class="icone icone-petite"><use href="../assets/icones.svg#etincelles"></use></svg> Exclusivité VYBE</div>
+                <blockquote>« La musique est le chemin le plus court entre deux cœurs. »</blockquote>
+                <p>Rencontrez Luna Ray, la voix derrière Afterglow.</p>
+            </div>
+        </div>
+
+        <!-- Colonne de droite : le formulaire -->
+        <div class="auth-panneau">
+            <a href="connexion.html" class="lien-retour"><svg class="icone icone-petite"><use href="../assets/icones.svg#fleche-gauche"></use></svg> Retour</a>
+
+            <form class="auth-formulaire" id="formulaireAuth">
+                <h2>Réinitialiser le mot de passe</h2>
+                <p>Saisissez votre e-mail et nous vous enverrons un lien de récupération.</p>
+                <p class="note-info">Démonstration : utilisez un e-mail et un mot de passe fictifs, jamais vos vrais identifiants.</p>
+
+                <label>
+                    Adresse e-mail
+                    <input type="email" placeholder="alex@exemple.com" required autocomplete="off">
+                </label>
+
+                <button type="submit" class="bouton bouton-principal pleine-largeur">Envoyer le lien</button>
+                <p class="message-statut cache" id="messageRecuperation">Démonstration terminée : aucun e-mail n'a été envoyé. Revenez à la connexion pour continuer.</p>
+                <p class="changer-auth">Vous vous souvenez de votre mot de passe ? <a href="connexion.html">Se connecter</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

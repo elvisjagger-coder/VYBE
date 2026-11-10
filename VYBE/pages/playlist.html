@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist — VYBE</title>
+    <link rel="icon" href="../assets/logo/favicon.png">
+
+    <!-- Polices de la maquette : Manrope (titres) et DM Sans (textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="playlist">
+
+    <div class="application">
+
+        <!-- Barre latérale, barre du haut : remplies par js/script.js -->
+        <aside class="barre-laterale" id="barreLaterale"></aside>
+        <header class="barre-haut" id="barreHaut"></header>
+
+        <main class="contenu">
+
+            <!-- ===== Contenu propre à cette page ===== -->
+
+            <div class="page page-detail">
+
+                <section class="hero-playlist">
+                    <div class="playlist-pochette">
+                        <img id="pochettePlaylist" src="" alt="">
+                    </div>
+                    <div>
+                        <span class="surtitre" id="typePlaylist"></span>
+                        <h1 id="titrePlaylist"></h1>
+                        <p id="descriptionPlaylist"></p>
+                        <div class="album-meta">
+                            <img src="../assets/images/nova.jpg" alt="">
+                            <b class="js-nom"></b>
+                            <i></i>
+                            <span id="nombreTitresPlaylist"></span>
+                        </div>
+                        <div class="actions-hero">
+                            <button class="bouton bouton-principal" id="boutonLirePlaylist">
+                                <svg class="icone icone-pleine"><use href="../assets/icones.svg#lecture"></use></svg> Lire
+                            </button>
+                            <button class="bouton bouton-secondaire" id="boutonModifierPlaylist">
+                                <svg class="icone"><use href="../assets/icones.svg#parametres"></use></svg> Modifier la playlist
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="titre-section"><h2>Vos titres</h2></div>
+                    <div id="titresPlaylist"></div>
+                    <div class="etat-vide cache" id="playlistVide">
+                        <svg class="icone"><use href="../assets/icones.svg#note"></use></svg>
+                        <h2>Chaque playlist commence par un titre.</h2>
+                        <p>Ajoutez votre premier titre grâce aux suggestions ci-dessous.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="titre-section"><h2>Ajouter des titres à cette playlist</h2></div>
+                    <div class="champ-recherche">
+                        <svg class="icone"><use href="../assets/icones.svg#recherche"></use></svg>
+                        <input type="text" id="rechercheAjout" placeholder="Rechercher des titres à ajouter..." aria-label="Rechercher des titres à ajouter">
+                    </div>
+                    <div id="suggestionsAjout"></div>
+                </section>
+            </div>
+
+            <!-- Pied de page : rempli par js/script.js -->
+            <footer class="pied-de-page" id="piedDePage"></footer>
+        </main>
+
+        <!-- Lecteur audio et navigation mobile : remplis par js/script.js -->
+        <footer class="lecteur" id="lecteur"></footer>
+        <nav class="nav-mobile" id="navMobile" aria-label="Navigation principale"></nav>
+    </div>
+
+    <!-- Lecteur plein écran : rempli par js/script.js -->
+    <div class="lecteur-plein" id="lecteurPlein"></div>
+
+    <!-- script.js (commun) doit être chargé AVANT le script de la page -->
+    <script src="../js/script.js"></script>
+    <script src="../js/playlist.js"></script>
+</body>
+</html>

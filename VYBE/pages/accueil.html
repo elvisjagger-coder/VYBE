@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil — VYBE</title>
+    <link rel="icon" href="../assets/logo/favicon.png">
+
+    <!-- Polices de la maquette : Manrope (titres) et DM Sans (textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="accueil">
+
+    <div class="application">
+
+        <!-- Barre latérale, barre du haut : remplies par js/script.js -->
+        <aside class="barre-laterale" id="barreLaterale"></aside>
+        <header class="barre-haut" id="barreHaut"></header>
+
+        <main class="contenu">
+
+            <!-- ===== Contenu propre à cette page ===== -->
+
+            <div class="page page-accueil">
+
+                <!-- Message de bienvenue -->
+                <div class="salutation">
+                    <div>
+                        <span class="surtitre">Votre dose quotidienne de bonne musique</span>
+                        <h1><b id="texteSalutation">Bonsoir</b><span>.</span></h1>
+                        <p>Reprenez là où vous vous étiez arrêté. Trouvez ce qui vous fait vibrer.</p>
+                    </div>
+                    <span class="salutation-note"><svg class="icone"><use href="../assets/icones.svg#etincelles"></use></svg> Un peu plus vous, chaque jour</span>
+                </div>
+
+                <!-- Artiste à la une -->
+                <section class="vedette">
+                    <div class="vedette-fond"></div>
+                    <div class="vedette-contenu">
+                        <div class="surtitre"><span class="point-anime"></span> Artiste VYBE à la une</div>
+                        <h1>Plongez dans <em>Afterglow</em></h1>
+                        <p>Le nouvel album de Luna Ray est là. Rêveur, audacieux, et pensé pour les heures après minuit.</p>
+                        <div class="actions-hero">
+                            <button class="bouton bouton-principal" id="boutonEcouterAlbum">
+                                <svg class="icone icone-pleine"><use href="../assets/icones.svg#lecture"></use></svg> Écouter l'album
+                            </button>
+                            <button class="bouton bouton-secondaire" id="boutonVoirArtiste">
+                                Découvrir Luna Ray <svg class="icone"><use href="../assets/icones.svg#fleche-droite"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="vedette-index">01 <span></span> 04</div>
+                </section>
+
+                <section>
+                    <div class="titre-section"><h2>Vos recommandations du jour</h2></div>
+                    <div class="grille-rapide" id="recommandations"></div>
+                </section>
+
+                <section>
+                    <div class="titre-section">
+                        <h2>Albums en boucle</h2>
+                        <a href="albums.html">Explorer les albums <svg class="icone icone-petite"><use href="../assets/icones.svg#fleche-droite"></use></svg></a>
+                    </div>
+                    <p class="description-section">Les disques vers lesquels tout le monde revient.</p>
+                    <div class="grille-cartes six" id="albumsEnBoucle"></div>
+                </section>
+
+                <section>
+                    <div class="titre-section">
+                        <h2>Écoutés récemment</h2>
+                        <a href="historique.html">Voir l'historique <svg class="icone icone-petite"><use href="../assets/icones.svg#fleche-droite"></use></svg></a>
+                    </div>
+                    <div class="grille-cartes six" id="ecoutesRecentes"></div>
+                </section>
+
+                <section>
+                    <div class="titre-section">
+                        <h2>Artistes sur votre longueur d'onde</h2>
+                        <a href="artistes.html">Tout voir <svg class="icone icone-petite"><use href="../assets/icones.svg#fleche-droite"></use></svg></a>
+                    </div>
+                    <div class="grille-cartes six" id="artistesAccueil"></div>
+                </section>
+
+                <section>
+                    <div class="titre-section">
+                        <h2>Une playlist pour chaque humeur</h2>
+                        <a href="playlists.html">Vos playlists <svg class="icone icone-petite"><use href="../assets/icones.svg#fleche-droite"></use></svg></a>
+                    </div>
+                    <div class="playlists-vedettes" id="playlistsVedettes"></div>
+                </section>
+
+                <section class="banniere-decouverte">
+                    <div>
+                        <span class="surtitre">Sortez de vos habitudes</span>
+                        <h2>Votre prochain coup de cœur vous attend.</h2>
+                        <p>De nouvelles voix, des sons inattendus. Suivez votre curiosité.</p>
+                        <a href="recherche.html" class="bouton bouton-secondaire">
+                            Découvrir votre son <svg class="icone"><use href="../assets/icones.svg#fleche-droite"></use></svg>
+                        </a>
+                    </div>
+                    <div class="decouverte-disques"><svg class="icone"><use href="../assets/icones.svg#disque"></use></svg><svg class="icone"><use href="../assets/icones.svg#disque"></use></svg></div>
+                </section>
+
+                <section>
+                    <div class="titre-section">
+                        <h2>Tout droit sortis du studio</h2>
+                        <a href="recherche.html">Découvrir plus <svg class="icone icone-petite"><use href="../assets/icones.svg#fleche-droite"></use></svg></a>
+                    </div>
+                    <p class="description-section">Les nouveautés qui méritent votre temps.</p>
+                    <div class="grille-cartes six" id="nouveautes"></div>
+                </section>
+
+                <section>
+                    <div class="titre-section"><h2>Parce que vous avez écouté Luna Ray</h2></div>
+                    <p class="description-section">Des sensations familières. De nouveaux favoris.</p>
+                    <div class="liste-recommandations" id="parceQueVousAvezEcoute"></div>
+                </section>
+            </div>
+
+            <!-- Pied de page : rempli par js/script.js -->
+            <footer class="pied-de-page" id="piedDePage"></footer>
+        </main>
+
+        <!-- Lecteur audio et navigation mobile : remplis par js/script.js -->
+        <footer class="lecteur" id="lecteur"></footer>
+        <nav class="nav-mobile" id="navMobile" aria-label="Navigation principale"></nav>
+    </div>
+
+    <!-- Lecteur plein écran : rempli par js/script.js -->
+    <div class="lecteur-plein" id="lecteurPlein"></div>
+
+    <!-- script.js (commun) doit être chargé AVANT le script de la page -->
+    <script src="../js/script.js"></script>
+    <script src="../js/accueil.js"></script>
+</body>
+</html>

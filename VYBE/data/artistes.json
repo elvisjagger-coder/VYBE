@@ -1,0 +1,44 @@
+[
+  {
+    "nom": "Luna Ray",
+    "image": "../assets/images/luna.jpg",
+    "auditeurs": "8,4 M",
+    "accroche": "Trouver la lumière au bout de la nuit.",
+    "bio": "Luna Ray est une chanteuse, autrice et productrice née à Londres. Elle mêle R&B alternatif et textures électroniques lumineuses. Avec Afterglow, son projet le plus intime, elle trouve de la beauté dans les entre-deux."
+  },
+  {
+    "nom": "Nova K",
+    "image": "../assets/images/nova.jpg",
+    "auditeurs": "5,1 M",
+    "accroche": "La tête dans les étoiles, les pieds sur la piste.",
+    "bio": "Nova K compose une musique électronique aérienne, faite de synthés brillants et de rythmes qui donnent envie de bouger. Gravity est son premier album."
+  },
+  {
+    "nom": "Milo Grey",
+    "image": "../assets/images/blue.jpg",
+    "auditeurs": "2,7 M",
+    "accroche": "Des chansons pour les heures bleues.",
+    "bio": "Milo Grey écrit des morceaux indie doux et mélancoliques, enregistrés tard le soir. Blue Hours raconte ces moments calmes entre la nuit et le matin."
+  },
+  {
+    "nom": "Aya Sol",
+    "image": "../assets/images/dagger.jpg",
+    "auditeurs": "6,3 M",
+    "accroche": "Du soleil dans chaque rythme.",
+    "bio": "Aya Sol fait danser avec un afrobeats coloré et plein d'énergie. Son album Flora mélange percussions, mélodies lumineuses et bonne humeur."
+  },
+  {
+    "nom": "Soren",
+    "image": "../assets/images/red.jpg",
+    "auditeurs": "3,9 M",
+    "accroche": "Couper le réseau, monter le son.",
+    "bio": "Soren est un artiste hip-hop au style direct et minimaliste. Dans Offline, il parle de prendre du recul et de se reconnecter à l'essentiel."
+  },
+  {
+    "nom": "Iris Vale",
+    "image": "../assets/images/violet.jpg",
+    "auditeurs": "1,8 M",
+    "accroche": "Le jazz comme premier rayon du matin.",
+    "bio": "Iris Vale est pianiste et chanteuse. Elle propose un jazz moderne, chaleureux et accessible. First Light est son tout premier titre."
+  }
+]

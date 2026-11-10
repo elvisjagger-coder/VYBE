@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album — VYBE</title>
+    <link rel="icon" href="../assets/logo/favicon.png">
+
+    <!-- Polices de la maquette : Manrope (titres) et DM Sans (textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="album">
+
+    <div class="application">
+
+        <!-- Barre latérale, barre du haut : remplies par js/script.js -->
+        <aside class="barre-laterale" id="barreLaterale"></aside>
+        <header class="barre-haut" id="barreHaut"></header>
+
+        <main class="contenu">
+
+            <!-- ===== Contenu propre à cette page ===== -->
+
+            <div class="page page-detail">
+
+                <section class="hero-album">
+                    <div class="album-fond" id="fondAlbum"></div>
+                    <img class="album-pochette" id="pochetteAlbum" src="" alt="">
+                    <div class="album-infos">
+                        <span class="surtitre">Album</span>
+                        <h1 id="titreAlbum"></h1>
+                        <p id="descriptionAlbum"></p>
+                        <div class="album-meta">
+                            <img id="imageArtisteAlbum" src="" alt="">
+                            <button id="artisteAlbum"></button>
+                            <i></i>
+                            <span id="anneeAlbum"></span>
+                            <i></i>
+                            <span id="nombreTitresAlbum"></span>
+                        </div>
+                        <div class="actions-hero">
+                            <button class="bouton bouton-principal" id="boutonLireAlbum">
+                                <svg class="icone icone-pleine"><use href="../assets/icones.svg#lecture"></use></svg> Lire
+                            </button>
+                            <button class="bouton-rond" id="coeurAlbum" data-coeur="0" aria-label="Ajouter le premier titre aux favoris">
+                                <svg class="icone icone-grande"><use href="../assets/icones.svg#coeur"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="album-titres">
+                    <div class="entete-titres">
+                        <span>#</span>
+                        <span>TITRE</span>
+                        <span>ALBUM</span>
+                        <svg class="icone icone-petite"><use href="../assets/icones.svg#horloge"></use></svg>
+                    </div>
+                    <div id="titresAlbum"></div>
+                </section>
+
+                <p class="album-note" id="noteAlbum"></p>
+
+                <section>
+                    <div class="titre-section"><h2>D'autres albums à découvrir</h2></div>
+                    <div class="grille-cartes six" id="autresAlbums"></div>
+                </section>
+            </div>
+
+            <!-- Pied de page : rempli par js/script.js -->
+            <footer class="pied-de-page" id="piedDePage"></footer>
+        </main>
+
+        <!-- Lecteur audio et navigation mobile : remplis par js/script.js -->
+        <footer class="lecteur" id="lecteur"></footer>
+        <nav class="nav-mobile" id="navMobile" aria-label="Navigation principale"></nav>
+    </div>
+
+    <!-- Lecteur plein écran : rempli par js/script.js -->
+    <div class="lecteur-plein" id="lecteurPlein"></div>
+
+    <!-- script.js (commun) doit être chargé AVANT le script de la page -->
+    <script src="../js/script.js"></script>
+    <script src="../js/album.js"></script>
+</body>
+</html>
